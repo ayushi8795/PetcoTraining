@@ -1,0 +1,27 @@
+Date:- August 15,2021
+Created the lambda function, integrated it with s3, inserted a csv file in s3 bucket, then retrieved it from lambda, added the pandas layer and then edited the csv file, removed 1 column and converted to json and then uploaded it back to s3.
+
+
+1)Print multiplication table of a given number
+
+def mul(n):
+    for i in range(1,11):
+        print(i*n)
+    
+n=3
+mul(n)
+
+2)
+Create a function that can accept two arguments name and age and print its value
+
+def pr(name,age):
+    print(name)
+    print(age)
+    
+    return (name,age)
+    
+name='ayushi'
+age= 22
+pr(name,age)
+v = pr(name,age)
+print(v)
