@@ -1,0 +1,21 @@
+Date:- August 16,2021
+
+Created the lambda function, integrated it with s3, inserted a csv file in s3 bucket, then retrieved it from lambda, added the pandas layer and then edited the csv file, removed 1 column and converted to json and then uploaded it back to s3.
+
+3)Count all lower case, upper case, digits, and special symbols from a given string
+def check(str1):
+    ccount=digit=symbol = 0
+
+    for i in str1:
+        if i >= "a" and i <= "z":
+            ccount = ccount + 1
+        elif i >= "0" and i<= "9":
+            digit = digit + 1 
+        else:
+            symbol = symbol + 1 
+            
+    print('chars = {}'.format(ccount))
+    print('digit = {}'.format(digit))
+    print('symbol = ',symbol)
+
+check("P@#yn26at^&i5ve")    
