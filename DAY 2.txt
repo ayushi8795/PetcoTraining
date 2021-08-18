@@ -18,4 +18,12 @@ def check(str1):
     print('digit = {}'.format(digit))
     print('symbol = ',symbol)
 
-check("P@#yn26at^&i5ve")    
+check("P@#yn26at^&i5ve") 
+
+
+
+
+
+
+
+

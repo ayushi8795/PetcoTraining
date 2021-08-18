@@ -1,0 +1,31 @@
+Given a list, remove the element at index 4 and add it to the 2nd position and at the end of the list
+list1 = [54, 44, 27, 79, 91, 41]
+   
+
+lst = [54, 44, 27, 79, 91, 41]
+
+a = lst.pop(4)
+lst.insert(2,a)
+lst.append(a)
+print(lst)
+    
+Remove duplicate from a list and create a tuple and find the minimum and maximum number
+lst = [37.21,37.21,37.2,41,39]
+res =[]
+for i in lst:
+    if i not in res:
+        res.append(i)
+tup = tuple(res)
+print(tup)
+print(min(tup))
+print(max(tup))
+
+
+
+AWS KINESIS
+https://www.youtube.com/watch?v=ZW6wbUILlI0&ab_channel=Pythoholic
+
+About JIRA
+https://www.youtube.com/watch?v=uM_m6EzMg3k
+
+
