@@ -1,0 +1,87 @@
+August 18, 2021
+
+About JIRA
+https://www.youtube.com/watch?v=uM_m6EzMg3k
+
+DOCKER
+https://www.youtube.com/watch?v=3c-iBn73dDE
+
+
+
+Create a Vehicle class with max_speed and mileage instance attributes
+
+class Vehicle:
+    def __init__(self,maxspeed, mileage):
+        self.maxspeed = maxspeed
+        self.mileage = mileage
+        
+v1 = Vehicle(23,56)
+print(v1.maxspeed)
+print(v1.mileage)
+
+
+
+Create a Bus object that will inherit all of the variables and methods of the Vehicle class and display it.
+Vehicle Name: School Volvo Speed: 180 Mileage: 12
+
+
+
+
+class Vehicle:
+    num = 1
+    def __init__(self,speed, mileage):
+        self.maxspeed = speed
+        self.mileage = mileage
+        # self.capacity = 6
+        Vehicle.num += 1
+    def oil(self,capacity):
+        self.capacity = capacity
+        price = capacity * 100
+        
+        return price
+class Bus(Vehicle):
+    pass
+    
+        
+v1 = Vehicle(23,56)
+print(v1.maxspeed)
+print(v1.mileage)
+b1 = Bus(34,76)
+print(b1.maxspeed)
+print(b1.mileage)
+print(b1.oil(5))
+print(Vehicle.num)
+print(v1.num)
+c1 = Vehicle(23,23)
+print(Vehicle.num)
+
+
+
+
+
+
+try:
+    def abc(a,b):
+        return (a/b)
+        
+    a1 = abc(10,2)
+    print(a1)
+    a2 = abc(10,1)
+    print(a2)
+    a3 = abc("a",0)
+    print(a3)
+except ZeroDivisionError:
+    
+    print("some error has occured")
+except Exception as e:
+    print("This error has occured",e)
+finally:
+    print("This is final statement")
+# print(10/0)
+
+
+Python Tutorial
+https://www.youtube.com/playlist?list=PL-osiE80TeTskrapNbzXhwoFUiLCjGgY7
+
+OOD
+https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc

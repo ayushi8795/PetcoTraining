@@ -1,3 +1,4 @@
+August 17, 2021
 Given a list, remove the element at index 4 and add it to the 2nd position and at the end of the list
 list1 = [54, 44, 27, 79, 91, 41]
    
@@ -19,13 +20,4 @@ tup = tuple(res)
 print(tup)
 print(min(tup))
 print(max(tup))
-
-
-
-AWS KINESIS
-https://www.youtube.com/watch?v=ZW6wbUILlI0&ab_channel=Pythoholic
-
-About JIRA
-https://www.youtube.com/watch?v=uM_m6EzMg3k
-
 
