@@ -1,0 +1,62 @@
+Date: August 24, 2021
+
+Create a Student class and initialize it with name and roll number. Make methods to :
+1. Display - It should display all informations of the student.
+2. setAge - It should assign age to student
+3. setMarks - It should assign marks to the student.
+
+
+class Student:
+    def __init__(self,name,roll):
+        self.name = name
+        self.roll = roll
+        
+    def display(self):
+        print('{} {} {} {}'.format(self.name,self.roll,self.age,self.marks))
+        
+    def set1(self,age):
+        self.age = age
+        
+    def set_marks(self,marks):
+        self.marks = marks
+        
+        
+a = Student("abc",23)
+a.set1(21)
+a.set_marks(77)
+a.display()
+
+
+
+
+Write a program to take two inputs : a and b
+And print the factorial of every number divisible by 5 in that range
+
+"""
+lst =list(map(int,input().split()))
+a = lst[0]
+b = lst[1]
+"""
+
+a = int(input())
+b = int(input())
+def abc(a,b):
+    lst = []
+    for i in range(a,b+1):
+        if i%5 == 0:
+            lst.append(i)
+    
+    def fact(n):        
+        if n ==0 or n ==1:
+            return 1
+        if n>1:
+            return n*fact(n-1)
+            
+    for i in lst:
+        y = fact(i)
+        print("Factorial of {} = {}".format(i,y))
+        
+
+        
+abc(a,b) 
+
