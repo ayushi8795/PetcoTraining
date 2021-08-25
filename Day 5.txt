@@ -1,0 +1,20 @@
+# Encapsulation
+class Abc:
+    def __init__(self,a1,b1):
+        self.__a = a1 
+        self.b = b1 
+        
+    def get(self):
+        return self.__a
+        
+    def setter(self,v):
+        self.__a = v
+        
+A = Abc(1,2)
+print(A.get())
+print(A.b)
+A.b = 10
+print(A.b)
+# print(A.__a)
+A.setter(20)
+print(A.get())
